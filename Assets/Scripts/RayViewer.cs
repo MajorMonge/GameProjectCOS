@@ -5,12 +5,8 @@ using UnityEngine;
 public class RayViewer : MonoBehaviour
 {
     public float weaponRage = 50f;
-    private Camera fpsCam;
+    public Camera fpsCam;
     // Start is called before the first frame update
-    void Start()
-    {
-        fpsCam = GetComponentInParent<Camera>();
-    }
 
     // Update is called once per frame
     void Update()
