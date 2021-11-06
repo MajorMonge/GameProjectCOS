@@ -1006,6 +1006,8 @@ MonoBehaviour:
   weaponRange: 50
   hitForce: 100
   gunEnd: {fileID: 2065712211}
+  fpsCam: {fileID: 1748375690}
+  laserLine: {fileID: 2065712212}
 --- !u!114 &1565072985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1019,6 +1021,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponRage: 50
+  fpsCam: {fileID: 1748375690}
 --- !u!1 &1650935291
 GameObject:
   m_ObjectHideFlags: 0
@@ -1094,6 +1097,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1650935291}
   m_CullTransparentMesh: 1
+--- !u!20 &1748375690 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 8592263130097745417, guid: 115512a323e46e647a90c81c6d2a390e, type: 3}
+  m_PrefabInstance: {fileID: 1194461741}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1816810706
 GameObject:
   m_ObjectHideFlags: 0
@@ -1237,7 +1245,7 @@ LineRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 1
+        value: 0.12030056
         inSlope: 0
         outSlope: 0
         tangentMode: 0
