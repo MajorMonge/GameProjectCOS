@@ -47,6 +47,8 @@ public class PlayerController : MonoBehaviour
   CharacterController ms_Controller;
   InputHandler ms_InputHandler;
 
+  AutoDoor Moving;
+
 
   void Start()
   {
@@ -87,6 +89,4 @@ public class PlayerController : MonoBehaviour
     transform.Rotate(0f, ms_InputHandler.GetLookInput().x * ms_InputHandler.LookSensitivity, 0f);
     PlayerCamera.transform.localRotation = Quaternion.Euler(MouseRotation, 0f, 0f);
   }
-
-
 }
