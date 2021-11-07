@@ -248,9 +248,12 @@ GameObject:
   - component: {fileID: 6488537631199406860}
   - component: {fileID: 2629416000801125606}
   - component: {fileID: 1539271555728846464}
+  - component: {fileID: 2032410098}
+  - component: {fileID: 2032410092}
+  - component: {fileID: 2032410093}
   m_Layer: 0
   m_Name: Character
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -286,7 +289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CursorIsLocked: 1
-  LookSensitivity: 1
+  LookSensitivity: 2
 --- !u!114 &6488537631199406860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -307,7 +310,7 @@ MonoBehaviour:
   MaxStamina: 100
   CurrentStamina: 100
   JumpForce: 20
-  DefaultSpeed: 30
+  DefaultSpeed: 5
   SprintMultiplier: 1.4
   CharacterMovment: {x: 0, y: 0, z: 0}
   MouseRotation: 0
@@ -347,6 +350,58 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &2032410098
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452307980578389281}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1817fe48d17b28e46b69eb6c852d0ac5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2032410092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452307980578389281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71d18004accc24d45909798cab860251, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponRage: 50
+  fpsCam: {fileID: 8592263130097745417}
+--- !u!114 &2032410093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452307980578389281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d22faad368b98cd42ab6f23893e365da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gunDamage: 5
+  fireRate: 0.15
+  weaponRange: 50
+  hitForce: 100
+  gunEnd: {fileID: 8815887666600894993}
+  fpsCam: {fileID: 8592263130097745417}
+  laserLine: {fileID: 3516282164232852590}
 --- !u!1 &1474906079292200057
 GameObject:
   m_ObjectHideFlags: 0
@@ -358,6 +413,7 @@ GameObject:
   - component: {fileID: 2785463748175531244}
   - component: {fileID: 8592263130097745417}
   - component: {fileID: 2248318302917694195}
+  - component: {fileID: 2080119810}
   m_Layer: 0
   m_Name: PlayerCamera
   m_TagString: Untagged
@@ -430,6 +486,25 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1474906079292200057}
   m_Enabled: 1
+--- !u!95 &2080119810
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1474906079292200057}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 82287f251327c424eb662407c37d12ee, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1977250175627268334
 GameObject:
   m_ObjectHideFlags: 0
