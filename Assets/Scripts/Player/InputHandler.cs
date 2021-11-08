@@ -35,10 +35,14 @@ public class InputHandler : MonoBehaviour
 
   }
 
-  public bool GetJumpAction()
+  public bool GetFireAction()
   {
-    return Input.GetButtonDown("Jump");
+    if (Input.GetButtonDown("Fire"))
+      return true;
+    else
+      return false;
   }
+
   public Vector3 GetMoveInput()
   {
     if (CursorIsLocked)

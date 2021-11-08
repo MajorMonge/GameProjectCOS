@@ -4,7 +4,15 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - GunCanvas
+  - CharacterGunPoint
+  - CharacterCamera
+  - ActiveWeapon
+  - ActiveWeaponCanvas
+  - Weapon
   - Door
+  - Prop
+  - PropModel
   layers:
   - Default
   - TransparentFX
